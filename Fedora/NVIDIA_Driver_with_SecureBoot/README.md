@@ -56,7 +56,8 @@ Step-by-step guide to installing and signing NVIDIA drivers on Fedora with Secur
     ```bash
     systemctl reboot
     ```
-    During boot, MOK Manager will ask if you want to enroll the key. Choose "Enroll MOK" -> "Continue" and enter the password created in Step 5.
+    During boot, MOK Manager will ask if you want to enroll the key. Choose "Enroll MOK" -> "Continue" and enter the password created in Step 5.  
+    
     <img src="https://raw.githubusercontent.com/patricnilackshan/linux/refs/heads/main/Fedora/NVIDIA_Driver_with_SecureBoot/images/mok_management.png" width="800">
 
 7. **Install NVIDIA drivers**:
