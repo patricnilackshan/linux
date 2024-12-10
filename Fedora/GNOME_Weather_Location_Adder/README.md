@@ -48,7 +48,3 @@ The script performs the following steps:
 **Add Location**: Updates GNOME Weather’s location settings with the new location.
 
 <br>
-
-### © PATRIC NILACKSHAN (pnilackshan@gmail.com)
-
-<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=patricnilackshan.gnome-weather-location-adder" />

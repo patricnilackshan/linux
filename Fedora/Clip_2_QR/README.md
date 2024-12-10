@@ -59,7 +59,3 @@ Clip2QR is a simple Python script that converts the text from your clipboard int
 
 
 <br>
-
-### © PATRIC NILACKSHAN (pnilackshan@gmail.com)
-
-<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=patricnilackshan.clip-to-qr" />

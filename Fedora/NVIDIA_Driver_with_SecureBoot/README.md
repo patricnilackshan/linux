@@ -65,7 +65,7 @@ Reboot the system to enroll the certificate:
 systemctl reboot
 ```
 During boot, MOK Manager will ask if you want to enroll the key. Choose "Enroll MOK" -> "Continue" and enter the password created in step 5.
-<img src="https://raw.githubusercontent.com/patricnilackshan/fedora-nvidia-secure-boot-fix/refs/heads/main/images/mok_management.png" width="800">
+<img src="https://raw.githubusercontent.com/patricnilackshan/linux/refs/heads/main/Fedora/NVIDIA_Driver_with_SecureBoot/images/mok_management.png" width="800">
 
 
 ### 7. Install NVIDIA Drivers
@@ -81,7 +81,3 @@ Reboot the system to finalize the driver installation:
 systemctl reboot
 ```
 <br>
-
-### © PATRIC NILACKSHAN (pnilackshan@gmail.com)
-
-<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=patricnilackshan.fedora-nvidia-secure-boot-fix" />

@@ -109,7 +109,7 @@ Add a button to show the desktop: [Show Desktop Button](https://extensions.gnome
 
 <br>
 
-# Install OBS
+# Install OBS 🖥️
 To install OBS:
 ```bash
 sudo dnf install obs-studio
@@ -120,7 +120,7 @@ To install Intel QSV Decoder for OBS:
 sudo dnf install intel-media-driver
 ```
 
-# Install Brave
+# Install Brave 🦁
 Create a repository file for Brave:
 
 ```bash
@@ -145,7 +145,7 @@ sudo dnf install brave-browser
 
 # Install Programming Languages & Development Tools 🛠️
 
-## Install Java JDK
+## Install Java JDK ☕
 ```bash
 sudo dnf install -y java-latest-openjdk-devel.x86_64
 ```
@@ -155,21 +155,21 @@ To change Java Alternative:
 sudo alternatives --config java
 ```
 
-## Install NodeJS
+## Install NodeJS 🟢
 ```bash
 sudo dnf install -y nodejs
 ```
 
-## Install C++ Development Tools
+## Install C++ Development Tools 🛠️
 ```bash
 sudo dnf install @development-tools 
 sudo dnf install -y cmake
 ```
 
 ## Install MongoDB 🍃
-To install MongoDB on Fedora 41 and resolve potential OpenSSL issues, follow these steps:
+To install MongoDB on Fedora and resolve potential OpenSSL issues, follow these steps:
 
-Step 1: Remove Existing MongoDB Installations ❌
+### Step 1: Remove Existing MongoDB Installations ❌  
 If you've previously installed MongoDB, remove any existing packages or repositories to avoid conflicts:
 
 ```bash
@@ -180,7 +180,7 @@ sudo rm -rf /var/log/mongodb /var/lib/mongo
 sudo rm -f /etc/yum.repos.d/mongodb-org-*.repo
 ```
 
-Step 2: Add MongoDB 8.0 Repository 📦
+### Step 2: Add MongoDB 8.0 Repository 📦  
 Create a repository file for MongoDB 8.0:
 
 ```bash
@@ -198,24 +198,24 @@ gpgkey=https://pgp.mongodb.com/server-8.0.asc
 ```
 Save and close the file.
 
-Step 3: Install MongoDB with OpenSSL 3 Support 🔐
+### Step 3: Install MongoDB with OpenSSL 3 Support 🔐
 To install MongoDB with the correct OpenSSL 3 support, use the following command:
 
 ```bash
 sudo dnf install -y mongodb-org mongodb-mongosh-shared-openssl3
 ```
 
-Step 4: Start MongoDB Service 🚀
+### Step 4: Start MongoDB Service 🚀
 After installation, start the MongoDB service:
 
 ```bash
 sudo systemctl start mongod
 ```
 
-Step 5: Verify Installation ✅
+### Step 5: Verify Installation ✅
 Check if MongoDB is running properly:
 
 ```bash
 sudo systemctl status mongod
 ```
-This should resolve any OpenSSL-related issues and allow MongoDB to function smoothly on Fedora 40.
+This should resolve any OpenSSL-related issues and allow MongoDB to function smoothly on Fedora.
