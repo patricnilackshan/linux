@@ -4,8 +4,6 @@ This repository contains useful tweaks and tricks for optimizing your Fedora exp
 
 <br>
 
-<br>
-
 ## Speed Up DNF Downloads ⚡
 To improve DNF download speeds:
 ```bash
@@ -120,6 +118,8 @@ To install Intel QSV Decoder for OBS:
 sudo dnf install intel-media-driver
 ```
 
+<br>
+
 # Install Brave 🦁
 Create a repository file for Brave:
 
@@ -142,6 +142,8 @@ Install Brave
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 sudo dnf install brave-browser
 ```
+
+<br>
 
 # Install Programming Languages & Development Tools 🛠️
 

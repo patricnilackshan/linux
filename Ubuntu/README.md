@@ -1,8 +1,8 @@
-# Ubuntu Resources 🌟
-### Enhance your Ubuntu experience with this guide:
+# 🌟 Ubuntu Resources
 
+A collection of Ubuntu tools, guides, and tweaks to enhance your experience.
 
+---
 
-### [1. Ubuntu GUI Desktop Environment for Ubuntu WSL2](https://github.com/patricnilackshan/linux/tree/main/Ubuntu/WSL)
-> Step-by-step instructions to set up a full GUI desktop environment for Ubuntu running on Windows Subsystem for Linux (WSL2).
-
+### 🖥️ [Ubuntu GUI Desktop for WSL2](https://github.com/patricnilackshan/linux/tree/main/Ubuntu/WSL)
+Step-by-step instructions to set up a full GUI desktop environment for Ubuntu running on Windows Subsystem for Linux (WSL2).

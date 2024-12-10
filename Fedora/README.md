@@ -1,16 +1,23 @@
-# Fedora Resources 🌟
-### Explore useful Fedora tools, guides, and tweaks to enhance your experience:
+# 🌟 Fedora Resources
 
-### [1. Clip 2 QR 📱](https://github.com/patricnilackshan/linux/tree/main/Fedora/Clip_2_QR)
-> A tool to convert clipboard content into a QR code, perfect for sharing text or links seamlessly.
+A collection of Fedora tools, guides, and tweaks to enhance your experience.
 
+---
 
-### [2. GNOME Weather Location Adder 🌦️](https://github.com/patricnilackshan/linux/tree/main/Fedora/GNOME_Weather_Location_Adder)
-> Easily add custom locations to the GNOME Weather app for personalized weather updates.
+### 📱 [Clip 2 QR](https://github.com/patricnilackshan/linux/tree/main/Fedora/Clip_2_QR)
+Convert clipboard content into QR codes for seamless sharing.
 
-### [3. NVIDIA Driver with SecureBoot 🖥️](https://github.com/patricnilackshan/linux/tree/main/Fedora/NVIDIA_Driver_with_SecureBoot)
-> A comprehensive guide to install and configure NVIDIA drivers on Fedora with Secure Boot enabled.
+---
 
-### [4. Tweaks ⚙️](https://github.com/patricnilackshan/linux/tree/main/Fedora/Tweaks)
-> A collection of optimizations and tricks for Fedora, from speeding up DNF to enabling fractional scaling and more.
+### 🌦️ [GNOME Weather Location Adder](https://github.com/patricnilackshan/linux/tree/main/Fedora/GNOME_Weather_Location_Adder)
+Add custom locations to GNOME Weather for personalized updates.
 
+---
+
+### 🖥️ [NVIDIA Driver with Secure Boot](https://github.com/patricnilackshan/linux/tree/main/Fedora/NVIDIA_Driver_with_SecureBoot)
+Step-by-step guide to install NVIDIA drivers on Fedora with Secure Boot enabled.
+
+---
+
+### ⚙️ [Tweaks](https://github.com/patricnilackshan/linux/tree/main/Fedora/Tweaks)
+Optimizations and tools like speeding up DNF, enabling fractional scaling, and more.
