@@ -31,17 +31,29 @@ sudo dnf -y install --setopt installonly_limit=1 kernel
 
 <br>
 
+
 ## Fix VLC Codecs 🎵
 
-To install VLC with required codecs:
+### To install VLC with required codecs:
 ```bash
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm && sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm && sudo dnf install @sound-and-video && sudo dnf install @multimedia && sudo dnf -y install vlc
 ```
 
-To fix codecs error:
+### To fix codecs error:
 ```bash
-sudo dnf install ffmpeg libavcodec-freeworld --allowerasing
+sudo dnf install ffmpeg libavcodec-freeworld gstreamer1-devel gstreamer1-plugins-base-tools gstreamer1-doc gstreamer1-plugins-base-devel gstreamer1-plugins-good gstreamer1-plugins-good-extras gstreamer1-plugins-ugly gstreamer1-plugins-bad-free gstreamer1-plugins-bad-free-devel gstreamer1-plugins-bad-free-extras --allowerasing && sudo dnf swap ffmpeg-free ffmpeg --allowerasing
 ```
+
+### Audio Issue Workaround (for 2x Playback)
+
+If you experience audio issues when playing media at 2x speed, you can try the following workaround:
+
+1. Open VLC Preferences:
+	* Go to `Tools` > `Preferences`.
+	* At the bottom left, set `Show Settings` to `All`.
+	* Under `Audio`, select `Output Modules`.
+2. Change Audio Output:
+	* Change the Audio Output to Pulseaudio audio output.
 
 <br>
 
@@ -121,26 +133,9 @@ sudo dnf install intel-media-driver
 <br>
 
 # Install Brave 🦁
-Create a repository file for Brave:
 
 ```bash
-sudo nano /etc/yum.repos.d/brave-browser.repo
-```
-
-Paste the following content into the file and Save:
-```text
-[brave]
-name=Brave Browser
-baseurl=https://brave-browser-rpm-release.s3.brave.com/x86_64/
-gpgcheck=1
-gpgkey=https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-enabled=1
-```
-
-Install Brave
-```bash
-sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-sudo dnf install brave-browser
+curl -fsS https://dl.brave.com/install.sh | sh
 ```
 
 <br>
