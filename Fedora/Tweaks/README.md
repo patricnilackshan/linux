@@ -32,6 +32,26 @@ sudo dnf -y install --setopt installonly_limit=1 kernel
 <br>
 
 
+## Wine Bottles 🍷
+
+### To install Bottles
+```bash
+sudo dnf -y install bottles
+```
+
+### To install supporting libraries
+```bash
+sudo dnf -y install mesa-dri-drivers mesa-vulkan-drivers
+sudo dnf -y install wine.i686
+sudo dnf -y install libgnutls.i686
+sudo dnf -y install mesa-libGL.i686
+sudo dnf -y install mesa-dri-drivers
+sudo dnf -y install libgnutls.i686
+sudo dnf -y install freetype freetype-devel
+```
+
+<br>
+
 ## Fix VLC Codecs 🎵
 
 ### To install VLC with required codecs:
