@@ -41,7 +41,7 @@ sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-r
 
 ### To fix codecs error:
 ```bash
-sudo dnf -y swap ffmpeg-free ffmpeg --allowerasing && sudo dnf install -y gstreamer gstreamer-plugins-base gstreamer-plugins-good gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer-libav gstreamer1-plugins-bad-freeworld gstreamer1-plugins-ugly-freeworld
+sudo dnf -y swap ffmpeg-free ffmpeg --allowerasing 
 ```
 
 ### Audio Issue Workaround (for 2x Playback)
