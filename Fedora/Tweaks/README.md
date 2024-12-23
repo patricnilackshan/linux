@@ -5,11 +5,18 @@ This repository contains useful tweaks and tricks for optimizing your Fedora exp
 <br>
 
 ## Speed Up DNF Downloads ⚡
-To improve DNF download speeds:
+
 ```bash
-sudo echo "max_parallel_downloads=10
-fastestmirror=True" >> /etc/dnf/dnf.conf
+sudo nano /etc/dnf/dnf.conf
 ```
+
+Paste the following content at the end of the file:
+```text
+max_parallel_downloads=10
+fastestmirror=True
+```
+Save and close the file.
+
 This configuration allows for parallel downloads and selects the fastest mirror for quicker package retrieval.
 
 <br>
@@ -106,14 +113,14 @@ gsettings set org.gnome.desktop.sound allow-volume-above-100-percent 'true'
 ## Remove Unwanted Bloatware ❌
 To remove some pre-installed software, use:
 ```bash
-sudo dnf erase yelp
-sudo dnf erase totem
-sudo dnf erase rhythmbox
-sudo dnf erase gnome-tour
-sudo dnf erase gnome-maps
-sudo dnf erase gnome-boxes
-sudo dnf erase mediawriter
-sudo dnf erase simple-scan
+sudo dnf -y erase yelp
+sudo dnf -y erase totem
+sudo dnf -y erase rhythmbox
+sudo dnf -y erase gnome-tour
+sudo dnf -y erase gnome-maps
+sudo dnf -y erase gnome-boxes
+sudo dnf -y erase mediawriter
+sudo dnf -y erase simple-scan
 ```
 
 <br>
@@ -140,14 +147,14 @@ Add a button to show the desktop: [Show Desktop Button](https://extensions.gnome
 <br>
 
 # Install OBS 🖥️
-To install OBS:
-```bash
-sudo dnf install obs-studio
-```
-
 To install Intel QSV Decoder for OBS:
 ```bash
-sudo dnf install intel-media-driver
+sudo dnf -y install intel-media-driver
+```
+
+To install OBS:
+```bash
+sudo dnf -y install obs-studio
 ```
 
 <br>
@@ -164,7 +171,7 @@ curl -fsS https://dl.brave.com/install.sh | sh
 
 ## Install Java JDK ☕
 ```bash
-sudo dnf install -y java-latest-openjdk-devel.x86_64
+sudo dnf -y install java-latest-openjdk-devel.x86_64
 ```
 
 To change Java Alternative:
@@ -174,13 +181,13 @@ sudo alternatives --config java
 
 ## Install NodeJS 🟢
 ```bash
-sudo dnf install -y nodejs
+sudo dnf -y install nodejs
 ```
 
 ## Install C++ Development Tools 🛠️
 ```bash
 sudo dnf install @development-tools 
-sudo dnf install -y cmake
+sudo dnf -y install cmake
 ```
 
 ## Install MongoDB 🍃
@@ -219,7 +226,7 @@ Save and close the file.
 To install MongoDB with the correct OpenSSL 3 support, use the following command:
 
 ```bash
-sudo dnf install -y mongodb-org mongodb-mongosh-shared-openssl3
+sudo dnf -y install mongodb-org mongodb-mongosh-shared-openssl3
 ```
 
 ### Step 4: Start MongoDB Service 🚀
